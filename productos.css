@@ -1,0 +1,176 @@
+header {
+    background-color: #BBBBBB;
+}
+
+.encabezado {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+nav {
+    position: absolute;
+    top: 118px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c17c19;
+    text-decoration: underline;
+}
+
+/* Inicia el Main */
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.productos li:active h2 {
+    border-color: greenyellow;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descripcion {
+    font-size: 18px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* inicia el Pie de Pajina */
+footer {
+    text-align: center;
+    background: url("img/bg.jpg");
+}
+
+.piePagina {
+    padding: 30px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* Responsive Movil */
+
+@media screen and (max-width: 480px) {
+    .encabezado h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+
+    }
+
+
+    nav a {
+        font-size: 15px;
+    }
+
+    nav li:last-child {
+        margin-right: 1.5%;
+    }
+
+    .productos li {
+        display: block;
+        width: 100%;
+    }
+
+    .productos li img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .productos li:nth-child(2) {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .encabezado,
+    .productos {
+        width: auto;
+    }
+
+}
+
+/* Responsive tablet */
+
+@media screen and (max-width: 980px) {
+
+    nav {
+        right: 3%;
+
+    }
+
+    .productos li {
+        margin: 0 1%;
+        padding: 30px 20px;
+    }
+
+    .productos h2 {
+        font-size: 22px;
+    }
+
+    .productos img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }
+
+    .encabezado,
+    .productos {
+        width: auto;
+    }
+
+
+}
